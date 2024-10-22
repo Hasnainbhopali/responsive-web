@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #f3f705;
+    color: #110c0c;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #0a0404;
+    text-decoration: none;
+}
+
+header .contact-info {
+    color: #0f0505;
+}
+
+.banner {
+    background: #2a05f8;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+.banner .btn {
+    background: #FFEB3B;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.advantages, .about, .services, .portfolio, .contact {
+    padding: 50px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.advantage-items, .service-items, .portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantage-items .item, .service-items .item, .portfolio-items .item {
+    width: 22%;
+    text-align: center;
+}
+
+.advantage-items .item img, .service-items .item img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .about-details .content {
+    width: 50%;
+}
+
+.about .about-details .image img {
+    width: 100%;
+}
+
+.about .btn {
+    background: #FFEB3B;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact form input, .contact form button {
+    width: 32%;
+    padding: 15px;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    background: #81C784;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    .advantage-items .item, .service-items .item, .portfolio-items .item {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .about .about-details {
+        flex-direction: column;
+    }
+
+    .about .about-details .content, .about .about-details .image {
+        width: 100%;
+    }
+
+    .contact form input, .contact form button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
